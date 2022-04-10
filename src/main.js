@@ -21,7 +21,7 @@ function createNoteElement(id, content) {
 
   element.classList.add("note");
   element.value = content;
-  element.placeholder = "Enter text here or Double click to delete just ch";
+  element.placeholder = "Enter text here or Double click to delete";
 
   element.addEventListener("change", () => {
     updateNote(id, element.value);
