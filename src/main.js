@@ -1,7 +1,5 @@
 const notesContainer = document.getElementById("app");
 const addNoteButton = notesContainer.querySelector(".add-note");
-let delbtn = document.createElement("del")
-delbtn.src="./del.jpg";
 
 getNotes().forEach((note) => {
   const noteElement = createNoteElement(note.id, note.content);
@@ -23,7 +21,7 @@ function createNoteElement(id, content) {
 
   element.classList.add("note");
   element.value = content;
-  element.placeholder = "Enter text here or Double click to delete";
+  element.placeholder = "Enter text here or Double click to delete just ch";
 
   element.addEventListener("change", () => {
     updateNote(id, element.value);
